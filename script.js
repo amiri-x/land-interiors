@@ -1,12 +1,15 @@
-console.log("Js is linked");
-
 // mobile nav
 const menuBtnEl = document.querySelector(".btn-menu");
 const closeMenuBtnEl = document.querySelector(".btn-close");
 const mainNavEl = document.querySelector(".main-nav");
-const mainNavListEl = document.querySelector(".main-nav-list");
 
-const media = window.matchMedia("(min-width: 1024px)");
+const syncNav = () => {
+    if (window.innerWidth >= 1024) {
+        mainNavEl.classList.add("open");
+    } else {
+        mainNavEl.classList.remove("open");
+    }
+};
 
 //  showing the mobile and tablet nav
 menuBtnEl.addEventListener("click", () => {
@@ -25,18 +28,5 @@ closeMenuBtnEl.addEventListener("click", () => {
 })
 
 // always show the nav on bigger divices
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1024) {
-        console.log("big");
-        mainNavEl.classList.add("open");
-        console.log(mainNavEl.classList);
-    }
-})
-
-
-
-
-
-console.log(menuBtnEl);
-console.log(closeMenuBtnEl);
-console.log(mainNavEl);
+syncNav();
+window.addEventListener("resize", syncNav);
