@@ -79,8 +79,8 @@ html {
 }
 
 body {
-    /* min: 16px  max: 18px*/
-    font-size: clamp(1rem, calc(1vw + 0.5rem), 1.125rem);
+    /* min: 14px  max: 20px*/
+    font-size: clamp(0.875rem, calc(2vw + 0.5rem), 1.25rem);
     font-family: "Poppins", system-ui, sans-serif;
     overflow-x: hidden;
 }
@@ -94,7 +94,7 @@ HEADER
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--sp-section);
-    align-items: center;
+    align-items: top;
     padding-right: 1rem;
 }
 
@@ -103,8 +103,8 @@ HEADER
 }
 
 .logo-img {
-    width: calc(2rem + 5vw);
-    max-width: 5rem;
+    width: calc(2.5rem + 5vw);
+    max-width: 7rem;
 }
 
 .btn-menu {
@@ -195,7 +195,6 @@ HEADER
 .cta-link:link,
 .cta-link:visited {
     color: var(--color-primary);
-    font-weight: 600;
 }
 .main-nav-list .divider {
     margin: 1em 0.5em 0 0.5em;
@@ -221,7 +220,7 @@ HERO
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--sp-3);
+    gap: 2rem;
     text-align: center;
 
     background-color: var(--transparent);
@@ -232,6 +231,9 @@ HERO
 .section-hero .h-prim {
     font-weight: 400;
 }
+.section-hero .t-prim {
+    font-weight: 600;
+}
 .section-hero .btn--primary.lg-device {
     display: none;
 }
@@ -239,7 +241,7 @@ HERO
     display: block;
 }
 .section-hero .btn--primary {
-    font-size: clamp(1rem, calc(0.25rem + 2vw), 1.5rem);
+    font-size: clamp(1.125rem, calc(0.5rem + 2vw), 1.75rem);
     padding: var(--fs-1) var(--fs-2);
     flex-grow: 0;
 }
@@ -299,7 +301,7 @@ About
 
 .how {
     position: relative;
-    margin-bottom: var(--sp-section);
+    margin-bottom: 5rem;
 }
 .how-text-box {
     background-color: var(--transparent);
@@ -312,7 +314,7 @@ About
 }
 .how-text-box .h-ter {
     font-weight: 600;
-    color: var(--tint-2);
+    color: var(--color-primary);
 }
 .how-text-box p {
     margin-bottom: var(--sp-3);
@@ -324,7 +326,7 @@ About
 
 /* ================= */
 .what {
-    margin-bottom: var(--sp-5);
+    margin-bottom: 5rem;
     padding: 0 var(--sp-5);
 }
 
@@ -334,17 +336,20 @@ About
 .what .img-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--sp-3);
+    gap: var(--sp-2);
 }
 .what .img-boxes .img-box {
     justify-self: center;
     text-align: center;
 }
 .what .img-box span {
-    font-size: clamp(0.75rem, calc(0.25rem + 2vw), 1rem);
+    font-size: clamp(0.75rem, calc(0.25rem + 2vw), 1.5rem);
+    font-weight: 500;
+    color: var(--color-primary);
 }
 .what div img {
-    width: 100%;
+    width: 85%;
+    height: 75%;
     margin-bottom: var(--sp-2);
 }
 
@@ -372,8 +377,8 @@ About
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    row-gap: var(--sp-1);
-    column-gap: var(--sp-2);
+    row-gap: var(--sp-2);
+    column-gap: var(--sp-3);
 
     margin-bottom: var(--sp-5);
 }

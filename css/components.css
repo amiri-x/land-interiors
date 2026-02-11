@@ -1,33 +1,32 @@
 /* ======== components ======== */
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .h-prim,
 .h-sec,
 .h-ter {
-    line-height: var(--lh-1);
+    line-height: 1.6;
     font-weight: 500;
 }
 .h-prim {
     /* 28px - 32px */
-    font-size: clamp(1.5rem, calc(0.5rem + 4vw), 2rem);
+    font-size: clamp(1.5rem, calc(0.5rem + 4vw), 2.25rem);
 }
 .h-sec {
     /* 22px - 28px */
-    font-size: clamp(1.375rem, calc(0.5rem + 3vw), 1.75rem);
+    font-size: clamp(1.375rem, calc(0.5rem + 3vw), 2rem);
 }
 .h-ter {
     /* 18px - 24px */
-    font-size: clamp(1.125rem, calc(0.75rem + 2vw), 1.5rem);
+    font-size: clamp(1.125rem, calc(0.75rem + 2vw), 1.75rem);
 }
 
 /* text body */
 .t-b {
-    /* 16px - 18px */
-    font-size: clamp(1rem, calc(0.75rem + 1vw), 1.125rem);
+    /* 16px - 20px */
+    font-size: clamp(1rem, calc(0.75rem + 1vw), 1.25rem);
 }
 .t-sm {
     /* 12px - 14px*/
@@ -35,8 +34,7 @@
 }
 .t-prim {
     display: block;
-    font-size: clamp(2rem, calc(0.5rem + 4vw), 2.25rem);
-    font-weight: 700;
+    font-size: clamp(2rem, calc(0.5rem + 4vw), 3rem);
     color: var(--color-primary);
 }
 .t-strong {
